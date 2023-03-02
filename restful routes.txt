@@ -1,0 +1,7 @@
+RESTFULL ROUTES
+   name       url/route   verb     discription
+================================================================
+1. INDEX      /dogs       GET     Display a list of all dogs
+2. NEW        /dogs/new   GET     Displays form to make a new dog
+3. CREATE     /dogs       POST    Add a new dog to the db
+4. SHOW       /dogs/:id   GET     Shows info about on dog

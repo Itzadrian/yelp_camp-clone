@@ -1,0 +1,35 @@
+<%- include('partials/header')  %>
+
+<!-- <form action="/campgrounds" method="post">
+    <input type="text" name="name" placeholder="name">
+    <input type="text" name="image" placeholder="image url">
+    <button>Submit!</button>
+</form> -->
+
+
+
+<div class="container">
+    <div class="row">
+       <h1 class="text-center mt-4 mb-3">Create New Campground</h1>
+        <div id="form">
+          <form action="/campgrounds" method="post">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" name="name" id="floatingInput" placeholder="name">
+              <label for="floatingInput">CampGround</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" name="image" id="floatingInput" placeholder="image url">
+              <label for="floatingInput">Image url</label>
+            </div>
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary" type="submit">Submit!</button>
+            </div>
+          </form>
+        </div>
+        
+    <a class="text-center" href="/campgrounds">Go Back</a>
+    </div>
+    
+</div>
+
+<%- include('partials/footer')  %>
