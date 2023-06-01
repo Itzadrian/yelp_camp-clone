@@ -102,7 +102,7 @@ app.get("/campgrounds/:id", function(req, res){
     });
 });
 app.get("/*", function(req, res){
-    res.send("Error Page Not Found");
+    res.render("error");
 });
 app.listen(3000, function(){
     console.log("YelpCamp Server Has Started!");
