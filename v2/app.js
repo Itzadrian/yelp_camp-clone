@@ -7,6 +7,10 @@ app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 
+//======================================================================================
+//DATABASE CODE
+//======================================================================================
+
 // Schema Setup
 // var {Schema} = mongoose;
 var campgroundSchema = new mongoose.Schema({
@@ -32,6 +36,9 @@ var Campground = mongoose.model("Campground", campgroundSchema);
 //     }
 // });
 
+//=============================================================================================
+//ROUTES
+//=============================================================================================
 
 // Landing Page Route
 app.get("/", function(req, res){
