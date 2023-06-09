@@ -86,7 +86,7 @@ app.get("/campgrounds/new", function(req, res){
 
 // SHOW Shows more info about one campground
 app.get("/campgrounds/:id", function(req, res){
-    // save Campground id to campgroundid and trim
+    // save Campground id to variable and trim
     var campgroundid = req.params.id.trim();
     // find campground with provided id
     Campground.findById(campgroundid, function(err, foundCampground){
