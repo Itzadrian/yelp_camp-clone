@@ -78,8 +78,8 @@ app.post("/campgrounds", function(req, res){
     });
 });
 
-// NEW - Show form to create new campground
-// Form for New Campground
+// NEW form to create new campground
+// form for New Campground
 app.get("/campgrounds/new", function(req, res){
     res.render("new");
 });
