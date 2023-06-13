@@ -22,6 +22,22 @@ var campgrounds = [
     {name: "Seed Creek", image: "https://img.freepik.com/free-photo/full-shot-people-clinking-mugs_23-2148970115.jpg?size=626&ext=jpg&ga=GA1.2.1371213388.1666100182"}
 ];
 
+// Create a Campground manually
+// Campground.create({
+//     name: "Obudu",
+//     image: "https://img.freepik.com/free-photo/hiker-stand-camping-front-orange-https://t3.ftcdn.net/jpg/03/66/13/44/240_F_366134410_FqlTYhXKq6QybJRMM2SRWnnHKhpJ1as6.jpgtent-backpack-mountains_1150-9163.jpg?size=626&ext=jpg&ga=GA1.2.1371213388.1666100182&semt=sph",
+//     description: "cool nature reserve ideal for camping trips"
+// }, function(err, campground){
+//     if(err){
+//         console.log(err);
+//     }
+//     else{
+//         console.log("Newly created campground");
+//         console.log(campground);
+//     }
+// });
+
+
 // Landing Page Route
 app.get("/", function(req, res){
     res.render("landing");
