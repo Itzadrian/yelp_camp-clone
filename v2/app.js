@@ -47,7 +47,7 @@ app.get("/campgrounds", function(req, res){
 // CREATE - add new campground to DB
 // Logic For Making New Campground And Adding To Array
 app.post("/campgrounds", function(req, res){
-    // get data from form and add to campgrounds array
+    // get data from form and add to campgrounds DB
     var name = req.body.name;
     var image = req.body.image;
     var desc = req.body.description;
