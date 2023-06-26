@@ -1,0 +1,27 @@
+<%- include('partials/header')  %>
+
+<div class="container">
+    <div class="row">
+       <h1 class="text-center mt-4 mb-3">Sign Up</h1>
+        <div id="form">
+          <form action="/register" method="post">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" name="username" id="floatingInput" placeholder="username">
+              <label for="floatingInput">Username</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control" name="password" id="floatingInput" placeholder="password">
+              <label for="floatingInput">Password</label>
+            </div>
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary" type="submit">Sign Up</button>
+            </div>
+          </form>
+        </div>
+        
+    <a class="text-center" href="/">Go Back</a>
+    </div>
+    
+</div>
+
+<%- include('partials/footer')  %>
