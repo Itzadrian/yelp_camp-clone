@@ -1,0 +1,26 @@
+<%- include('../partials/header')  %>
+<div class="container">
+  <div class="row">
+     <h1 class="text-center mt-4 mb-3">Edit Comment</h1>
+      <div id="form">
+        <form action="/campgrounds/<%= campground_id %>/comments/<%= comment._id %>?_method=put" method="post">
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" name="comment[text]" id="floatingInput" value="<%= comment.text %>">
+            <label for="floatingInput">Comment Body</label>
+          </div>
+          <!-- <div class="form-floating mb-3">
+            <input type="text" class="form-control" name="comment[author]" id="floatingInput" placeholder="author">
+            <label for="floatingInput">Comment Author</label>
+          </div> -->
+          <div class="d-grid gap-2">
+            <button class="btn btn-primary" type="submit">Submit!</button>
+          </div>
+        </form>
+      </div>
+      
+  <a class="text-center" href="/campgrounds/ <%= campground_id %>">Go Back</a>
+  </div>
+  
+</div>
+
+<%- include('../partials/footer')  %>
